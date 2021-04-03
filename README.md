@@ -12,3 +12,9 @@ Post installation script for ubuntu that automatically installs and configures u
 - [x] Install Neovim
 - [ ] Configure Neovim
 - [ ] Prompt for confirmation before installing anything
+
+## Running
+You can run the following command to download and automatically run the installer script:
+```shell
+sudo sh -c "$(curl -fsSL https://raw.githubusercontent.com/mestru17/ubuntu-post-installer/master/ubuntu-post-installer.sh)"
+```
