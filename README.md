@@ -3,7 +3,7 @@ Post installation script for ubuntu that automatically installs and configures u
 
 ## List of features
 - [x] Update Apt
-- [x] Update system
+- [x] Update programs and libraries
 - [x] Remove unused programs and libraries
 - [x] Install Zsh
 - [x] Set Zsh as default shell
