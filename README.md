@@ -8,6 +8,8 @@ Post installation script for ubuntu that automatically installs and configures u
 - [x] Install Zsh
 - [x] Set Zsh as default shell
 - [x] Install Oh My Zsh
+- [ ] Install zsh-auto-suggestions
+- [ ] Install zsh-syntax-highlighting
 - [x] Install Bat and create `bat` alias instead of `batcat`
 - [x] Install Neovim
 - [ ] Configure Neovim
