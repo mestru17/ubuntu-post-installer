@@ -22,12 +22,15 @@ sudo sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/maste
 sudo apt install bat
 sudo echo 'alias bat="batcat"' >> ~/.zshrc
 
+# tree (prints directory in console)
+sudo apt install tree
+
 # Neovim (better version of Vim)
 sudo apt install neovim
 sudo mkdir ~/.config/nvim
-
-# tree (prints directory in console)
-sudo apt install tree
+sudo touch ~/.config/nvim/init.vim
+# vim-plug (plugin manager)
+sudo sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
 # Install pip3 and python3-venv
 sudo apt install python3-pip
