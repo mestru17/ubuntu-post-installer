@@ -23,7 +23,7 @@ sudo curl -fsSLo ~/.zshrc https://raw.githubusercontent.com/mestru17/dotfiles/ma
 # zsh-autosuggestions
 sudo git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
-#zsh-syntax-highlighting
+# zsh-syntax-highlighting
 sudo git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
 # Bat (better version of cat)
@@ -43,7 +43,10 @@ sudo sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/
 # Make neovim default git commit editor
 sudo git config --global core.editor "nvim"
 
-# Install pip3 and python3-venv
+# silversearcher-ag (better version of ack)
+sudo apt install silversearcher-ag
+
+# pip3 and python3-venv
 sudo apt install python3-pip
 sudo apt install python3-venv
 

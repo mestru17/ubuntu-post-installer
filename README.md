@@ -16,6 +16,7 @@ Post installation script for ubuntu that automatically installs and configures u
 - [x] Install Neovim
 - [x] Configure Neovim
 - [x] Set Neovim as default Git commit editor
+- [x] Install silversearcher-ag
 - [x] Install pip3
 - [x] Install python3-venv
 
