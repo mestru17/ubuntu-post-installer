@@ -17,6 +17,8 @@ sudo chsh -s $(which zsh)
 
 # Oh My Zsh (better Zsh prompt)
 sudo sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+# Download .zshrc (config)
+sudo curl -fsSLo ~/.zshrc https://raw.githubusercontent.com/mestru17/dotfiles/master/.zshrc
 
 # zsh-autosuggestions
 sudo git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
@@ -34,7 +36,8 @@ sudo apt install tree
 # Neovim (better version of Vim)
 sudo apt install neovim
 sudo mkdir ~/.config/nvim
-sudo touch ~/.config/nvim/init.vim
+# Download init.vim (config)
+sudo curl -fsSLo ~/.config/nvim/init.vim https://raw.githubusercontent.com/mestru17/dotfiles/master/.config/nvim/init.vim
 # vim-plug (plugin manager)
 sudo sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 

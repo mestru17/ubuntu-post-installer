@@ -2,6 +2,7 @@
 Post installation script for ubuntu that automatically installs and configures useful programs in (new) ubuntu (debian-based) instances.
 
 ## List of features
+- [ ] Prompt for confirmation before installing anything
 - [x] Update Apt
 - [x] Update programs and libraries
 - [x] Remove unused programs and libraries
@@ -13,9 +14,8 @@ Post installation script for ubuntu that automatically installs and configures u
 - [x] Install Bat and create `bat` alias instead of `batcat`
 - [x] Install tree (for printing directory trees)
 - [x] Install Neovim
-- [ ] Configure Neovim
+- [x] Configure Neovim
 - [ ] Set Neovim as default Git commit editor
-- [ ] Prompt for confirmation before installing anything
 - [x] Install pip3
 - [x] Install python3-venv
 
