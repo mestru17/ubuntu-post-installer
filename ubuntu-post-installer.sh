@@ -40,6 +40,8 @@ sudo mkdir ~/.config/nvim
 sudo curl -fsSLo ~/.config/nvim/init.vim https://raw.githubusercontent.com/mestru17/dotfiles/master/.config/nvim/init.vim
 # vim-plug (plugin manager)
 sudo sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+# Make neovim default git commit editor
+sudo git config --global core.editor "nvim"
 
 # Install pip3 and python3-venv
 sudo apt install python3-pip

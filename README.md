@@ -15,7 +15,7 @@ Post installation script for ubuntu that automatically installs and configures u
 - [x] Install tree (for printing directory trees)
 - [x] Install Neovim
 - [x] Configure Neovim
-- [ ] Set Neovim as default Git commit editor
+- [x] Set Neovim as default Git commit editor
 - [x] Install pip3
 - [x] Install python3-venv
 
