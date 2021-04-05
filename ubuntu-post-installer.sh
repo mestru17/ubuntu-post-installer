@@ -26,6 +26,9 @@ sudo echo 'alias bat="batcat"' >> ~/.zshrc
 sudo apt install neovim
 sudo mkdir ~/.config/nvim
 
+# tree (prints directory in console)
+sudo apt install tree
+
 # Install pip3 and python3-venv
 sudo apt install python3-pip
 sudo apt install python3-venv

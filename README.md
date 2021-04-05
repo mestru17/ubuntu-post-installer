@@ -11,6 +11,7 @@ Post installation script for ubuntu that automatically installs and configures u
 - [ ] Install zsh-auto-suggestions
 - [ ] Install zsh-syntax-highlighting
 - [x] Install Bat and create `bat` alias instead of `batcat`
+- [x] Install tree (for printing directory trees)
 - [x] Install Neovim
 - [ ] Configure Neovim
 - [ ] Set Neovim as default Git commit editor
