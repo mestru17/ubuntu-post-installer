@@ -13,6 +13,7 @@ Post installation script for ubuntu that automatically installs and configures u
 - [x] Install Bat and create `bat` alias instead of `batcat`
 - [x] Install Neovim
 - [ ] Configure Neovim
+- [ ] Set Neovim as default Git commit editor
 - [ ] Prompt for confirmation before installing anything
 - [x] Install pip3
 - [x] Install python3-venv
