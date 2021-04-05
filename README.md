@@ -14,6 +14,8 @@ Post installation script for ubuntu that automatically installs and configures u
 - [x] Install Neovim
 - [ ] Configure Neovim
 - [ ] Prompt for confirmation before installing anything
+- [x] Install pip3
+- [x] Install python3-venv
 
 ## Running
 You can run the following command to download and automatically run the script:
