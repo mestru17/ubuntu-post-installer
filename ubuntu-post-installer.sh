@@ -50,3 +50,9 @@ sudo apt install silversearcher-ag
 sudo apt install python3-pip
 sudo apt install python3-venv
 
+# Golang
+GOFILENAME = "$(curl 'https://golang.org/VERSION?m=text').linux-amd64.tar.gz"
+sudo curl -fsSLo "~/$GOFILENAME" "https://dl.google.com/go/$GOFILENAME"
+sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf "$GOFILENAME"
+sudo rm -f "$GOFILENAME"
+

@@ -19,6 +19,7 @@ Post installation script for ubuntu that automatically installs and configures u
 - [x] Install silversearcher-ag
 - [x] Install pip3
 - [x] Install python3-venv
+- [x] Install Golang
 
 ## Running
 You can run the following command to download and automatically run the script:
