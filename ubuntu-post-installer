@@ -1,0 +1,53 @@
+#!/usr/bin/env bash
+
+update_apt() {
+  echo "Updating apt..."
+  apt update || exit
+  echo "Apt updated"
+}
+
+install_zsh() {
+  echo "Installing zsh..."
+  apt install zsh || exit
+
+  echo "Setting zsh as default shell"
+  chsh -s $(which zsh)
+
+  echo "Installing Oh My Zsh..."
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" || exit
+
+  echo "Installing zsh plugins..."
+  echo "zsh-autosuggestions..."
+  git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
+  echo "zsh-syntax-highlighting..."
+  git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+
+  echo "Zsh installed"
+}
+
+install_neovim() {
+  echo "Installing neovim..."
+  mkdir -p ~/nvim/bin || exit
+  curl https://github.com/neovim/neovim/releases/download/nightly/nvim.appimage > ~/nvim/bin/nvim || exit
+  chmod +x ~/nvim/bin/nvim || exit
+  echo "Neovim installed"
+}
+
+install_bat() {
+  echo "Installing bat..."
+  apt install bat || exit
+  echo "Bat installed"
+}
+
+install_dotfiles() {
+  bash <(curl -s https://raw.githubusercontent.com/mestru17/dotfiles/master/install) || exit
+  git config --global core.editor "nvim"
+}
+
+update_apt
+install_zsh
+install_neovim
+install_bat
+install_dotfiles
+
