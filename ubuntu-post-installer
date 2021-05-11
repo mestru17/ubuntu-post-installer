@@ -40,6 +40,12 @@ install_bat() {
   echo "Bat installed"
 }
 
+install_rust() {
+  echo "Installing rust..."
+  curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh || exit
+  echo "Rust installed"
+}
+
 install_dotfiles() {
   bash <(curl -s https://raw.githubusercontent.com/mestru17/dotfiles/master/install) || exit
   git config --global core.editor "nvim"
@@ -49,5 +55,6 @@ update_apt
 install_zsh
 install_neovim
 install_bat
+install_rust
 install_dotfiles
 
