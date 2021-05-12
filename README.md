@@ -14,6 +14,8 @@ Post installation script for ubuntu that automatically installs and configures u
 - [x] Configure Neovim
 - [x] Set Neovim as default Git commit editor
 - [x] Install Bat and create `bat` alias instead of `batcat`
+- [x] Install fd
+- [x] Install ripgrep
 - [x] Install rust (including rustup and cargo etc.)
 
 ## Running
