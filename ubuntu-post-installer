@@ -40,6 +40,20 @@ install_bat() {
   echo "Bat installed"
 }
 
+install_fd() {
+  echo "Installing fd..."
+  apt install fd-find || exit
+  mkdir -p $HOME/bin || exit
+  ln -s $(which fdfind) $HOME/bin/fd
+  echo "Installed fd"
+}
+
+install_ripgrep() {
+  echo "Installing ripgrep..."
+  apt install ripgrep || exit
+  echo "Installed ripgrep"
+}
+
 install_rust() {
   echo "Installing rust..."
   curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh || exit
@@ -55,6 +69,8 @@ update_apt
 install_zsh
 install_neovim
 install_bat
+install_fd
+install_ripgrep
 install_rust
 install_dotfiles
 
