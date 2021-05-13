@@ -65,6 +65,19 @@ install_dotfiles() {
   git config --global core.editor "nvim"
 }
 
+install_node() {
+  echo "Installing nvm..."
+  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash || exit
+  export NVM_DIR="$HOME/.nvm"
+  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+  [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+  echo "Installed nvm"
+
+  echo "Installing node..."
+  nvm install node || exit
+  echo "Node installed"
+}
+
 update_apt
 install_zsh
 install_neovim
@@ -73,4 +86,5 @@ install_fd
 install_ripgrep
 install_rust
 install_dotfiles
+install_node
 
