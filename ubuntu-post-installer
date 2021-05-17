@@ -69,6 +69,16 @@ install_ripgrep() {
   echo "Installed ripgrep"
 }
 
+install_exa() {
+  echo "Installing exa..."
+  mkdir -p $HOME/exa
+  curl -Lo $HOME/exa/exa.zip https://github.com/ogham/exa/releases/download/v0.10.0/exa-linux-x86_64-v0.10.0.zip || exit
+  unzip $HOME/exa/exa.zip -d $HOME/exa
+  rm $HOME/exa/exa.zip
+  mkdir -p $HOME/bin
+  ln -s $HOME/exa/bin/exa $HOME/bin
+}
+
 install_rust() {
   echo "Installing rust..."
   curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh || exit
