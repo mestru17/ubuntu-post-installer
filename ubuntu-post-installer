@@ -6,6 +6,21 @@ update_apt() {
   echo "Apt updated"
 }
 
+install_fish() {
+  echo "Installing fish..."
+  apt-add-repository ppa:fish-shell/release-3
+  apt update
+  apt install fish
+
+  echo "Setting fish as default shell..."
+  chsh -s /usr/bin/fish
+
+  echo "Installing Oh My Fish..."
+  curl -L https://get.oh-my.fish | fish
+
+  echo "Installed fish"
+}
+
 install_zsh() {
   echo "Installing zsh..."
   apt install zsh || exit
@@ -79,7 +94,8 @@ install_node() {
 }
 
 update_apt
-install_zsh
+#install_zsh
+install_fish
 install_neovim
 install_bat
 install_fd
